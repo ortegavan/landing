@@ -1,6 +1,6 @@
 # Landing
 
-Um teste simples de uma landing page montada com PrimeNG.
+Um teste simples de uma landing page montada com [PrimeNG](https://primeng.org).
 
 ## Instalação
 
@@ -19,7 +19,7 @@ Importado os arquivos abaixo no `styles.css`:
 @import "primeicons/primeicons.css";
 ```
 
-O tema pode ser escolhido [aqui](https://primeng.org/theming#builtinthemes).
+O tema pode ser escolhido em [https://primeng.org/theming](https://primeng.org/theming#builtinthemes).
 
 ## Uso
 
@@ -29,4 +29,4 @@ O único módulo importado neste exemplo foi o `ButtonModule` utilizado com `p-b
 import { ButtonModule } from "primeng/button";
 ```
 
-Para renderizar o conteúdo, foram utilizados os blocos disponíveis [aqui](https://blocks.primeng.org/#/free).
+Para renderizar o conteúdo, foram utilizados os blocos disponíveis em [https://blocks.primeng.org](https://blocks.primeng.org/#/free).
