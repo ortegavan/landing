@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth !important;
+}
+
 body {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;

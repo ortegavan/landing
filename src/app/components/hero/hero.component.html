@@ -8,7 +8,13 @@
             Aprenda a criar aplicações modernas e robustas em Angular com uma
             abordagem prática e passo a passo em um livro completo.
         </p>
-        <p-button [rounded]="true"> Comprar agora </p-button>
+        <p-button
+            [rounded]="true"
+            [routerLink]="['/']"
+            fragment="comprar-agora"
+        >
+            Comprar agora
+        </p-button>
     </div>
     <div>
         <img src="hero.svg" alt="Hero image" />

@@ -1,0 +1,24 @@
+section {
+    padding: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+section > div {
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    border-radius: 16px;
+    border: solid 1px #eaeaea;
+    border-top: solid 8px #dcbcf1;
+}
+
+img {
+    width: auto;
+    height: 60px;
+}
