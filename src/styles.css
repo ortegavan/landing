@@ -12,11 +12,7 @@ body {
     font-optical-sizing: auto;
     background-color: #fff;
     color: #000;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 1200px;
+    font-size: 18px;
 }
 
 .p-button {

@@ -1,16 +1,13 @@
-<section class="container who">
+<section class="who">
     <div>
-        <h1>
-            Para quem é este livro?
-        </h1>
-        <p>
-            Este livro foi escrito pensando em programadores que nunca tiveram - ou tiveram pouco - contato com o Angular e querem aprender o framework através de uma aplicação completa com componentes, formulários, rotas, autenticação e gerenciamento de estado. O livro traz, também, algumas boas reflexões e insights sobre o melhor uso dos artefatos nos projetos.
-        </p>
-        <p>
-            Conhecimentos em HTML, JavaScript e CSS são necessários para acompanhar o aprendizado. Conhecimentos em TypeScript são desejáveis. Conhecimentos em Git são necessários se o leitor quiser clonar ou acompanhar as branches do repositório do projeto.
-        </p>
+        <h1>{{ title }}</h1>
+        <ng-content></ng-content>
     </div>
     <div>
-        <img src="who.svg" alt="Who">
+        <img
+            [src]="image"
+            alt="Who"
+            [style]="'max-width: ' + imageSize + 'px'"
+        />
     </div>
 </section>

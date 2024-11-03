@@ -1,22 +1,27 @@
 h1 {
     font-weight: normal;
-    font-size: 2.6rem;
+    font-size: 4rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 .hero {
+    padding: 120px;
     height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 120px;
 }
 
-.hero img {
-    width: 100%;
-    max-width: 620px;
-    height: auto;
+.hero > div {
+    width: 50%;
 }
 
-.hero__content {
+.content {
     display: flex;
     flex-direction: column;
     justify-content: center;

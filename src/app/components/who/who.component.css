@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 160px;
+    padding: 120px;
+    gap: 120px;
 }
 
 .who > div {
@@ -21,8 +22,8 @@
     justify-content: flex-end;
 }
 
-.who img {
+img {
     width: 100%;
-    max-width: 460px;
+    /* max-width: 640px; */
     height: auto;
 }
