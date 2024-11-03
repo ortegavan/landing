@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #fff;
+  color: #000;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
