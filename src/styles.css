@@ -26,3 +26,7 @@ body {
 .p-button:hover {
     background-color: #d0a8ea;
 }
+
+.p-accordion {
+    font-family: "Nunito", sans-serif;
+}
