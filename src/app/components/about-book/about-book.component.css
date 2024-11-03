@@ -1,0 +1,25 @@
+.about {
+    background-color: #faf2ff;
+    display: flex;
+    align-items: center;
+}
+
+.book {
+    width: 50%;
+    padding-top: 50%;
+    background-color: #faf2ff;
+    background-image: url("/book.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about .text {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: calc((100% - 1200px) / 2);
+    padding-right: calc((100% - 1200px) / 2);
+    flex-direction: column;
+    gap: 32px;
+}

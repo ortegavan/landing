@@ -1,0 +1,28 @@
+.who {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 160px;
+}
+
+.who > div {
+    width: 50%;
+}
+
+.who > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.who > div:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.who img {
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+}
