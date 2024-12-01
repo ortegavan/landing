@@ -16,6 +16,10 @@ export class PriceComponent {
         );
     }
 
+    comprarBrochura() {
+        throw new Error('Not implemented yet');
+    }
+
     comprarCapaDura() {
         window.open(
             'https://www.amazon.com.br/kindle-dbs/storefront?storeType=browse&node=5475882011&ref_=nav_cs_kindle_books',
