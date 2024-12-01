@@ -1,0 +1,13 @@
+.images {
+    background-color: #faf2ff;
+    padding: 120px;
+}
+
+section {
+    padding-bottom: 64px;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+}
