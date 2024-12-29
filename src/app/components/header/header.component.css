@@ -1,8 +1,11 @@
 header {
-    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header:hover {
+    cursor: pointer;
 }
 
 .logo,
