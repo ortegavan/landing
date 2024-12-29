@@ -1,0 +1,21 @@
+header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo,
+nav {
+    display: flex;
+    gap: 16px;
+}
+
+.logo img {
+    width: 24px;
+    height: auto;
+}
+
+.logo p {
+    font-size: 24px;
+}
