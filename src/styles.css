@@ -26,9 +26,24 @@ a {
 
 .container {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 32px;
+    border: solid 1px blueviolet;
+}
+
+.note {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+}
+
+.note {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
 }
 
 .p-button {

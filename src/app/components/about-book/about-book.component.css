@@ -1,11 +1,18 @@
 .about {
     background-color: #faf2ff;
+}
+
+.flex {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.flex > div {
+    flex: 1;
 }
 
 .book {
-    width: 50%;
     padding-top: 50%;
     background-color: #faf2ff;
     background-image: url("/book.png");
@@ -15,9 +22,8 @@
 }
 
 .text {
-    width: 50%;
+    padding: 32px;
     display: flex;
     flex-direction: column;
     gap: 32px;
-    padding: 120px;
 }
