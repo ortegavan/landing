@@ -12,17 +12,12 @@
     flex: 1;
 }
 
-.book {
-    padding-top: 50%;
-    background-color: #faf2ff;
-    background-image: url("/book.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.book img {
+    width: 100%;
+    height: auto;
 }
 
 .text {
-    padding-left: 32px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -35,14 +30,5 @@
 @media screen and (max-width: 768px) {
     .flex {
         flex-direction: column;
-    }
-
-    .text {
-        padding-left: 0;
-    }
-
-    .book {
-        width: 100%;
-        padding-top: 100%;
     }
 }
