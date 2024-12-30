@@ -23,3 +23,23 @@ nav {
 .logo p {
     font-size: 24px;
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 32px;
+    }
+
+    .logo img {
+        width: 18px;
+        height: auto;
+    }
+
+    .logo p {
+        font-size: 18px;
+    }
+
+    .logo,
+    nav {
+        gap: 8px;
+    }
+}

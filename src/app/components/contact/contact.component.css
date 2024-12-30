@@ -3,10 +3,17 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     gap: 32px;
 }
 
 strong {
     color: #b244f9;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 32px;
+    }
 }

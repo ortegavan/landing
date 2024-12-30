@@ -35,3 +35,28 @@ del {
     display: flex;
     gap: 16px;
 }
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero {
+        height: unset;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .hero > div {
+        width: 100%;
+    }
+
+    .content {
+        padding: 32px;
+        gap: 0;
+    }
+
+    .note {
+        display: none;
+    }
+}

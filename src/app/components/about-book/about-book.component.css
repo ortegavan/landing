@@ -31,3 +31,18 @@
 .text p:last-child {
     margin-top: 24px;
 }
+
+@media screen and (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .text {
+        padding: 32px;
+    }
+
+    .book {
+        width: 100%;
+        padding-top: 100%;
+    }
+}

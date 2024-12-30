@@ -27,3 +27,15 @@ img {
     /* max-width: 640px; */
     height: auto;
 }
+
+@media screen and (max-width: 768px) {
+    .who {
+        padding: 32px;
+        flex-direction: column-reverse;
+        gap: 16px;
+    }
+
+    .who > div {
+        width: 100%;
+    }
+}

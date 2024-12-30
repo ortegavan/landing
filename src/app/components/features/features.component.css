@@ -16,3 +16,11 @@ i {
     font-size: 2.4rem;
     color: #dcbcf1;
 }
+
+@media screen and (max-width: 768px) {
+    .features {
+        padding: 32px;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
