@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
 
 @Component({
     selector: 'app-price',
-    imports: [ButtonModule],
+    imports: [],
     templateUrl: './price.component.html',
-    styleUrl: './price.component.css'
+    styleUrl: './price.component.css',
 })
 export class PriceComponent {
     comprarKindle() {

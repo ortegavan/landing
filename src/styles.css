@@ -24,8 +24,6 @@ a {
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
-    padding: 32px;
-    border: solid 1px blueviolet;
 }
 
 .note {
@@ -43,27 +41,29 @@ button {
     border-radius: 4px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .primary-button {
-    background-color: #dcbcf1;
-    color: #000;
+    background-color: #b244f9;
+    color: #fff;
     border: none;
 }
 
 .primary-button:hover {
-    background-color: #d0a8ea;
-    cursor: pointer;
+    background-color: #972bde;
 }
 
 .secondary-button {
     background-color: transparent;
-    border: solid 2px #dcbcf1;
-    color: #dcbcf1;
+    border: solid 2px #b244f9;
+    color: #b244f9;
 }
 
 .secondary-button:hover {
-    border: solid 2px #d0a8ea;
-    color: #d0a8ea;
-    cursor: pointer;
+    border: solid 2px #972bde;
+    color: #972bde;
 }
 
 .p-accordion {
