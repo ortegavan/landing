@@ -9,7 +9,6 @@ import { HeaderComponent } from '../header/header.component';
 
 @Component({
     selector: 'app-home',
-    standalone: true,
     imports: [
         HeroComponent,
         AboutBookComponent,
@@ -20,6 +19,6 @@ import { HeaderComponent } from '../header/header.component';
         HeaderComponent,
     ],
     templateUrl: './home.component.html',
-    styleUrl: './home.component.css',
+    styleUrl: './home.component.css'
 })
 export class HomeComponent {}

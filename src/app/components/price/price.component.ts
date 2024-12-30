@@ -3,10 +3,9 @@ import { ButtonModule } from 'primeng/button';
 
 @Component({
     selector: 'app-price',
-    standalone: true,
     imports: [ButtonModule],
     templateUrl: './price.component.html',
-    styleUrl: './price.component.css',
+    styleUrl: './price.component.css'
 })
 export class PriceComponent {
     comprarKindle() {
