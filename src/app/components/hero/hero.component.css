@@ -1,5 +1,5 @@
 h1 {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
 }
 
 img {
@@ -52,8 +52,7 @@ del {
     }
 
     .content {
-        padding: 32px;
-        gap: 0;
+        margin-top: 32px;
     }
 
     .note {

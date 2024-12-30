@@ -1,5 +1,5 @@
 section {
-    padding: 120px;
+    padding: 80px 32px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,10 +10,4 @@ section {
 
 strong {
     color: #b244f9;
-}
-
-@media screen and (max-width: 768px) {
-    section {
-        padding: 32px;
-    }
 }

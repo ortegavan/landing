@@ -2,7 +2,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 32px 0;
 }
 
 header:hover {
@@ -25,10 +24,6 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-    header {
-        padding: 32px;
-    }
-
     .logo img {
         width: 18px;
         height: auto;

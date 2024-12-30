@@ -3,7 +3,6 @@
     justify-content: space-between;
     align-items: center;
     gap: 32px;
-    padding: 80px 0;
 }
 
 .who > div {
@@ -30,7 +29,6 @@ img {
 
 @media screen and (max-width: 768px) {
     .who {
-        padding: 32px;
         flex-direction: column-reverse;
         gap: 16px;
     }

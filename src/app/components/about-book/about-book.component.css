@@ -38,7 +38,7 @@
     }
 
     .text {
-        padding: 32px;
+        padding-left: 0;
     }
 
     .book {
