@@ -6,6 +6,7 @@ import { ContactComponent } from '../contact/contact.component';
 import { TocComponent } from '../toc/toc.component';
 import { PriceComponent } from '../price/price.component';
 import { HeaderComponent } from '../header/header.component';
+import { FeaturesComponent } from '../features/features.component';
 
 @Component({
     selector: 'app-home',
@@ -17,8 +18,9 @@ import { HeaderComponent } from '../header/header.component';
         TocComponent,
         PriceComponent,
         HeaderComponent,
+        FeaturesComponent,
     ],
     templateUrl: './home.component.html',
-    styleUrl: './home.component.css'
+    styleUrl: './home.component.css',
 })
 export class HomeComponent {}
