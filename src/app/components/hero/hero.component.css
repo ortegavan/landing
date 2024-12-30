@@ -1,5 +1,5 @@
 h1 {
-    font-size: 2rem;
+    font-size: 2.6rem;
 }
 
 img {
@@ -16,7 +16,7 @@ del {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 120px;
+    gap: 32px;
 }
 
 .hero > div {
@@ -27,5 +27,11 @@ del {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 32px;
+    gap: 8px;
+}
+
+.cta {
+    margin-top: 18px;
+    display: flex;
+    gap: 16px;
 }

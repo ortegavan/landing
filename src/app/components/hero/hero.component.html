@@ -3,20 +3,29 @@
         <p class="note">Livro Angular na prática</p>
         <h1>
             Angular <del>é difícil</del><br />
-            acabou de ficar mais fácil e intuitivo!
+            acabou de ficar mais fácil!
         </h1>
         <p>
             Aprenda, do zero, a criar uma aplicação de forma rápida e eficiente
             com Angular. Siga uma abordagem prática e passo a passo em um livro
             completo.
         </p>
-        <p-button
-            [rounded]="true"
-            [routerLink]="['/']"
-            fragment="comprar-agora"
-        >
-            Comprar agora
-        </p-button>
+        <div class="cta">
+            <button
+                [routerLink]="['/']"
+                fragment="comprar-agora"
+                class="primary-button"
+            >
+                Comprar agora
+            </button>
+            <button
+                [routerLink]="['/']"
+                fragment="saiba-mais"
+                class="secondary-button"
+            >
+                Saiba mais
+            </button>
+        </div>
     </div>
     <div>
         <img src="hero.svg" alt="Hero image" />

@@ -39,23 +39,35 @@ a {
     text-transform: uppercase;
 }
 
-.note {
-    font-size: 0.8rem;
-    font-weight: bold;
-    color: #999;
-    text-transform: uppercase;
-}
-
-.p-button {
-    background-color: #dcbcf1;
-    color: #000;
+button {
     font-family: "Nunito", sans-serif;
     font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.primary-button {
+    background-color: #dcbcf1;
+    color: #000;
     border: none;
 }
 
-.p-button:hover {
+.primary-button:hover {
     background-color: #d0a8ea;
+    cursor: pointer;
+}
+
+.secondary-button {
+    background-color: transparent;
+    border: solid 2px #dcbcf1;
+    color: #dcbcf1;
+}
+
+.secondary-button:hover {
+    border: solid 2px #d0a8ea;
+    color: #d0a8ea;
+    cursor: pointer;
 }
 
 .p-accordion {
