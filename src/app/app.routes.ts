@@ -11,5 +11,12 @@ export const routes: Routes = [
                 (m) => m.ImagesComponent
             ),
     },
+    {
+        path: 'errata',
+        loadComponent: () =>
+            import('./components/errata/errata.component').then(
+                (m) => m.ErrataComponent
+            ),
+    },
     { path: '**', redirectTo: 'home' },
 ];

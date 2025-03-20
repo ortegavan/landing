@@ -1,0 +1,46 @@
+<app-header />
+
+<section class="container">
+    <h1>Errata</h1>
+    <p>
+        Este livro foi escrito com muita atenção e dedicação e, embora eu tenha
+        tomado bastante cuidado para garantir a precisão de seu conteúdo, erros
+        acontecem. Se você encontrou algum erro neste livro, seja no texto ou
+        seja nos códigos, por favor, envie um e-mail para
+        <strong>angularnapratica&#64;gmail.com</strong>.
+    </p>
+</section>
+
+<hr />
+
+<section class="container">
+    <h2>Capítulo 10</h2>
+    <h3>Estado reativo: explorando o caminho do BehaviorSubject ao signal</h3>
+    <p>
+        No capítulo 10, o método <code>addComent()</code> de
+        <code>recipe.component.ts</code> precisa conter o id do comentário, caso
+        contrário, a API retornará <i>bad request</i>. O código correto é:
+    </p>
+    <pre>
+        <code>
+addComment(form: FormGroup) {{'{'}}
+    if (form.invalid) {{'{'}}
+        form.markAllAsTouched();
+        return;
+    {{'}'}}
+
+    const comment = {{'{'}}
+        id: '',
+        createdAt: new Date(),
+        recipeId: this.id(),
+        userId: '123456',
+        userName: 'Anônimo',
+        rating: form.value.rating,
+        comment: form.value.comment,
+    {{'}'}} as Comment;
+    this.commentService.add(comment).pipe(first()).subscribe();
+    this.closeRatingForm();
+{{'}'}}
+        </code>
+    </pre>
+</section>
