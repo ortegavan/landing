@@ -25,10 +25,7 @@
                             }
                         ],
                         "styles": ["src/styles.css"],
-                        "scripts": [],
-                        "security": {
-                            "autoCsp": true
-                        }
+                        "scripts": []
                     },
                     "configurations": {
                         "production": {
