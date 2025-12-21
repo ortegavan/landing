@@ -37,11 +37,24 @@
                                 },
                                 {
                                     "type": "anyComponentStyle",
-                                    "maximumWarning": "2kB",
-                                    "maximumError": "4kB"
+                                    "maximumWarning": "4kB",
+                                    "maximumError": "8kB"
                                 }
                             ],
-                            "outputHashing": "all"
+                            "outputHashing": "all",
+                            "optimization": {
+                                "scripts": true,
+                                "styles": {
+                                    "minify": true,
+                                    "inlineCritical": true
+                                },
+                                "fonts": {
+                                    "inline": true
+                                }
+                            },
+                            "sourceMap": false,
+                            "extractLicenses": true,
+                            "namedChunks": false
                         },
                         "development": {
                             "optimization": false,
@@ -109,5 +122,8 @@
         "@schematics/angular:resolver": {
             "typeSeparator": "."
         }
+    },
+    "cli": {
+        "analytics": false
     }
 }

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="utf-8" />
         <meta
@@ -10,16 +10,135 @@
         <base href="/" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+        <!-- CSS crítico inline para melhorar FCP -->
+        <style>
+            * {
+                margin: 0;
+                box-sizing: border-box;
+            }
+            html {
+                scroll-behavior: smooth;
+            }
+            body {
+                font-family: 'Nunito', sans-serif;
+                background-color: #fff;
+                color: #000;
+                font-size: 18px;
+            }
+            .container {
+                padding: 32px;
+                width: 100%;
+                max-width: 1600px;
+                margin: 0 auto;
+            }
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .hero {
+                height: 90vh;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 32px;
+            }
+            .hero > div {
+                width: 50%;
+            }
+            h1 {
+                font-size: 2.4rem;
+            }
+            .note {
+                font-size: 0.8rem;
+                font-weight: 700;
+                color: #999;
+                text-transform: uppercase;
+            }
+            button {
+                font-family: 'Nunito', sans-serif;
+                font-weight: 700;
+                font-size: 1rem;
+                padding: 8px 16px;
+                border-radius: 4px;
+            }
+            .primary-button {
+                background-color: #b244f9;
+                color: #fff;
+                border: none;
+            }
+            .secondary-button {
+                background-color: transparent;
+                border: solid 2px #b244f9;
+                color: #b244f9;
+            }
+            @media (max-width: 768px) {
+                .hero {
+                    height: auto;
+                    flex-direction: column-reverse;
+                    gap: 0;
+                }
+                .hero > div {
+                    width: 100%;
+                }
+                h1 {
+                    font-size: 1.6rem;
+                }
+            }
+        </style>
+
+        <!-- Resource hints para melhorar performance -->
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <!-- Preload de recursos críticos (LCP) -->
         <link
-            href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-            rel="stylesheet"
+            rel="preload"
+            href="hero.svg"
+            as="image"
+            type="image/svg+xml"
+            fetchpriority="high"
         />
-        <script
-            src="https://kit.fontawesome.com/f6dfbc60f1.js"
-            crossorigin="anonymous"
-        ></script>
+        <link rel="preload" href="book.webp" as="image" type="image/webp" />
+
+        <!-- Fontes otimizadas - apenas pesos necessários com display=swap -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+            rel="stylesheet"
+            media="print"
+            onload="this.media = 'all'"
+        />
+        <noscript>
+            <link
+                href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+                rel="stylesheet"
+            />
+        </noscript>
+
+        <!-- Font Awesome carregado de forma assíncrona após DOMContentLoaded -->
+        <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin />
+        <script>
+            // Carregar Font Awesome após DOMContentLoaded para não bloquear renderização
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', loadFontAwesome);
+            } else {
+                loadFontAwesome();
+            }
+            function loadFontAwesome() {
+                var script = document.createElement('script');
+                script.src = 'https://kit.fontawesome.com/f6dfbc60f1.js';
+                script.crossOrigin = 'anonymous';
+                script.defer = true;
+                document.head.appendChild(script);
+            }
+        </script>
     </head>
     <body>
         <app-root></app-root>

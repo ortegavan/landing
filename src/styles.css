@@ -1,3 +1,4 @@
+/* Reset e base - CSS crítico já está inline no index.html */
 * {
     margin: 0;
     box-sizing: border-box;
@@ -13,6 +14,10 @@ body {
     background-color: #fff;
     color: #000;
     font-size: 18px;
+    /* Otimização de renderização de texto */
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -69,4 +74,17 @@ button:hover {
 
 .p-accordion {
     font-family: 'Nunito', sans-serif;
+}
+
+/* Otimização para imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    /* Evita layout shift */
+    content-visibility: auto;
+}
+
+/* Otimização para seções com defer */
+section {
+    contain: layout style;
 }

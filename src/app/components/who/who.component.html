@@ -6,7 +6,11 @@
     <div>
         <img
             [src]="image"
-            alt="Who"
+            [alt]="title"
+            [attr.width]="imageSize"
+            [attr.height]="imageSize"
+            loading="lazy"
+            decoding="async"
             [style]="'max-width: ' + imageSize + 'px'"
         />
     </div>

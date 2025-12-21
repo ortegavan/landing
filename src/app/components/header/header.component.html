@@ -1,18 +1,25 @@
 <header class="container">
     <div class="logo" routerLink="/">
-        <img src="idea.svg" alt="Ideias em Angular" />
+        <img 
+            src="idea.svg" 
+            alt="Ideias em Angular" 
+            width="40" 
+            height="40" 
+            loading="eager"
+            decoding="async"
+        />
         <p>Angular <strong>na prática</strong></p>
     </div>
     <nav>
         <a routerLink="/errata"> Errata </a>
-        <a href="https://www.linkedin.com/in/ortegavan/">
-            <i class="fa-brands fa-linkedin-in"></i>
+        <a href="https://www.linkedin.com/in/ortegavan/" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
         </a>
-        <a href="https://github.com/ortegavan">
-            <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/ortegavan" aria-label="GitHub">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
         </a>
-        <a href="https://www.instagram.com/ortegavan/">
-            <i class="fa-brands fa-instagram"></i>
+        <a href="https://www.instagram.com/ortegavan/" aria-label="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
         </a>
     </nav>
 </header>

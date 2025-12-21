@@ -1,7 +1,18 @@
 <section class="about">
     <div class="container flex">
         <div class="book">
-            <img src="book.png" alt="Foto do livro Angular na prática" />
+            <picture>
+                <source srcset="book.webp" type="image/webp" />
+                <img
+                    src="book.png"
+                    alt="Foto do livro Angular na prática"
+                    width="400"
+                    height="600"
+                    loading="eager"
+                    fetchpriority="high"
+                    decoding="sync"
+                />
+            </picture>
         </div>
         <div class="text">
             <p class="note">Direto ao ponto</p>
