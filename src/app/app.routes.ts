@@ -8,14 +8,14 @@ export const routes: Routes = [
         path: 'imagens',
         loadComponent: () =>
             import('./components/images/images.component').then(
-                (m) => m.ImagesComponent
+                (m) => m.ImagesComponent,
             ),
     },
     {
         path: 'errata',
         loadComponent: () =>
             import('./components/errata/errata.component').then(
-                (m) => m.ErrataComponent
+                (m) => m.ErrataComponent,
             ),
     },
     { path: '**', redirectTo: 'home' },

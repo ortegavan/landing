@@ -5,6 +5,6 @@ import { AccordionModule } from 'primeng/accordion';
     selector: 'app-toc',
     imports: [AccordionModule],
     templateUrl: './toc.component.html',
-    styleUrl: './toc.component.css'
+    styleUrl: './toc.component.css',
 })
 export class TocComponent {}

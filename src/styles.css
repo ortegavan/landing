@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    font-family: "Nunito", sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-optical-sizing: auto;
     background-color: #fff;
     color: #000;
@@ -35,7 +35,7 @@ a {
 }
 
 button {
-    font-family: "Nunito", sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 1rem;
     padding: 8px 16px;
@@ -68,5 +68,5 @@ button:hover {
 }
 
 .p-accordion {
-    font-family: "Nunito", sans-serif;
+    font-family: 'Nunito', sans-serif;
 }

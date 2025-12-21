@@ -5,9 +5,8 @@ import {
     withInMemoryScrolling,
 } from '@angular/router';
 import { routes } from './app.routes';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { providePrimeNG } from 'primeng/config';
-import Lara from '@primeng/themes/lara';
+import Lara from '@primeuix/themes/lara';
 
 export const appConfig: ApplicationConfig = {
     providers: [
@@ -18,9 +17,8 @@ export const appConfig: ApplicationConfig = {
             withInMemoryScrolling({
                 anchorScrolling: 'enabled',
                 scrollPositionRestoration: 'enabled',
-            })
+            }),
         ),
-        provideAnimationsAsync(),
         providePrimeNG({
             theme: {
                 preset: Lara,

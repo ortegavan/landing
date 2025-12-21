@@ -4,7 +4,7 @@ import { Component, Input } from '@angular/core';
     selector: 'app-who',
     imports: [],
     templateUrl: './who.component.html',
-    styleUrl: './who.component.css'
+    styleUrl: './who.component.css',
 })
 export class WhoComponent {
     @Input() title!: string;
