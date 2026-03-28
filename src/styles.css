@@ -84,7 +84,28 @@ img {
     content-visibility: auto;
 }
 
-/* Otimização para seções com defer */
-section {
-    contain: layout style;
+.kit-form-wrapper {
+    width: 100%;
+    max-width: 500px;
+}
+
+.kit-form-wrapper > div[data-uid]:empty {
+    display: none;
+}
+
+.formkit-form[data-uid='d20c72486c'] {
+    max-width: 100% !important;
+}
+
+.formkit-form[data-uid='d20c72486c'] input {
+    font-family: 'Nunito', sans-serif;
+}
+
+.formkit-form[data-uid='d20c72486c'] .formkit-field {
+    flex: 2 1 auto !important;
+    margin-right: 6px !important;
+}
+
+.formkit-form[data-uid='d20c72486c'] .formkit-submit {
+    flex: 1 1 auto !important;
 }

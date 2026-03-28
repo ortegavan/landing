@@ -7,6 +7,7 @@ import { TocComponent } from '../toc/toc.component';
 import { PriceComponent } from '../price/price.component';
 import { HeaderComponent } from '../header/header.component';
 import { FeaturesComponent } from '../features/features.component';
+import { NewsletterComponent } from '../newsletter/newsletter.component';
 
 @Component({
     selector: 'app-home',
@@ -19,6 +20,7 @@ import { FeaturesComponent } from '../features/features.component';
         PriceComponent,
         HeaderComponent,
         FeaturesComponent,
+        NewsletterComponent,
     ],
     templateUrl: './home.component.html',
     styleUrl: './home.component.css',
