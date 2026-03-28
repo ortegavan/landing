@@ -8,6 +8,8 @@ import { PriceComponent } from '../price/price.component';
 import { HeaderComponent } from '../header/header.component';
 import { FeaturesComponent } from '../features/features.component';
 import { NewsletterComponent } from '../newsletter/newsletter.component';
+import { afterNextRender } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'app-home',
@@ -25,4 +27,16 @@ import { NewsletterComponent } from '../newsletter/newsletter.component';
     templateUrl: './home.component.html',
     styleUrl: './home.component.css',
 })
-export class HomeComponent {}
+export class HomeComponent {
+    constructor(private route: ActivatedRoute) {
+        this.route.fragment.subscribe((fragment: string | null) => {
+            if (fragment === 'newsletter') {
+                afterNextRender(() => {
+                    document
+                        .getElementById('newsletter')
+                        ?.scrollIntoView({ behavior: 'smooth' });
+                });
+            }
+        });
+    }
+}
