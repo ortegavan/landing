@@ -2,76 +2,41 @@
 <app-hero />
 <app-features />
 <app-about-book />
-@defer (on viewport; prefetch on idle) {
-    <app-who title="Para quem é este livro?" image="who.svg" imageSize="640">
-        <p>
-            Este livro foi escrito pensando em programadores que nunca tiveram - ou
-            tiveram pouco - contato com o Angular e querem aprender o framework
-            através de uma aplicação completa com componentes, formulários, rotas,
-            autenticação e gerenciamento de estado. O livro traz, também, algumas
-            boas reflexões e insights sobre o melhor uso dos artefatos nos projetos.
-        </p>
-        <p>
-            Conhecimentos em HTML, JavaScript e CSS são necessários para acompanhar
-            o aprendizado. Conhecimentos em TypeScript são desejáveis. Conhecimentos
-            em Git são necessários se o leitor quiser clonar ou acompanhar as
-            branches do repositório do projeto.
-        </p>
-    </app-who>
-} @placeholder {
-    <section class="container">
-        <h1>Para quem é este livro?</h1>
-        <div style="min-height: 300px;"></div>
-    </section>
-}
-@defer (on viewport; prefetch on idle) {
-    <app-toc />
-} @placeholder {
-    <section id="saiba-mais" class="container">
-        <h1>Tabela de conteúdos</h1>
-        <div style="min-height: 400px;"></div>
-    </section>
-}
-@defer (on viewport; prefetch on idle) {
-    <app-price />
-} @placeholder {
-    <section id="comprar-agora" class="container">
-        <h1>Comprar agora</h1>
-        <div style="min-height: 300px;"></div>
-    </section>
-}
-@defer (on viewport; prefetch on idle) {
-    <app-who title="Sobre a autora" image="author.svg" imageSize="520">
-        <p>
-            Vanessa Ortega tem mais de 20 anos de experiência no desenvolvimento de
-            aplicações corporativas usando diversas tecnologias. Nos últimos anos,
-            no entanto, vem se dedicando quase que exclusivamente ao desenvolvimento
-            front-end com Angular e suas tecnologias.
-        </p>
-        <p>
-            Vanessa adora falar sobre Angular e compartilha dicas do dia a dia no
-            trabalho com o framework em
-            <a href="https://medium.com/&#64;ortegavan"
-                >https://medium.com/&#64;ortegavan</a
-            >.
-        </p>
-        <p>
-            Vanessa é Certified Senior Angular Developer. É, também, apaixonada por
-            assuntos relacionados a interfaces e experiência do usuário e tem
-            pós-graduação em Design de UX e Design Thinking.
-        </p>
-    </app-who>
-} @placeholder {
-    <section class="container">
-        <h1>Sobre a autora</h1>
-        <div style="min-height: 300px;"></div>
-    </section>
-}
-@defer (on viewport; prefetch on idle) {
-    <app-contact />
-} @placeholder {
-    <section class="container">
-        <h1>Entre em contato</h1>
-        <div style="min-height: 100px;"></div>
-    </section>
-}
+<app-who title="Para quem é este livro?" image="who.svg" imageSize="640">
+    <p>
+        Este livro foi escrito pensando em programadores que nunca tiveram - ou
+        tiveram pouco - contato com o Angular e querem aprender o framework
+        através de uma aplicação completa com componentes, formulários, rotas,
+        autenticação e gerenciamento de estado. O livro traz, também, algumas
+        boas reflexões e insights sobre o melhor uso dos artefatos nos projetos.
+    </p>
+    <p>
+        Conhecimentos em HTML, JavaScript e CSS são necessários para acompanhar
+        o aprendizado. Conhecimentos em TypeScript são desejáveis. Conhecimentos
+        em Git são necessários se o leitor quiser clonar ou acompanhar as
+        branches do repositório do projeto.
+    </p>
+</app-who>
+<app-toc />
+<app-price />
+<app-who title="Sobre a autora" image="author.svg" imageSize="520">
+    <p>
+        Vanessa Ortega tem mais de 20 anos de experiência no desenvolvimento de
+        aplicações corporativas usando diversas tecnologias. Nos últimos anos,
+        no entanto, vem se dedicando quase que exclusivamente ao desenvolvimento
+        front-end com Angular e suas tecnologias.
+    </p>
+    <p>
+        Vanessa adora falar sobre Angular e compartilha dicas do dia a dia no
+        trabalho com o framework em
+        <a href="https://medium.com/&#64;ortegavan"
+            >https://medium.com/&#64;ortegavan</a
+        >.
+    </p>
+    <p>
+        Vanessa é Certified Senior Angular Developer. É, também, apaixonada por
+        assuntos relacionados a interfaces e experiência do usuário e tem
+        pós-graduação em Design de UX e Design Thinking.
+    </p>
+</app-who>
+<app-contact />
