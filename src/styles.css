@@ -80,8 +80,6 @@ button:hover {
 img {
     max-width: 100%;
     height: auto;
-    /* Evita layout shift */
-    content-visibility: auto;
 }
 
 .kit-form-wrapper {
